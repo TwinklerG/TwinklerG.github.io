@@ -16,15 +16,15 @@
   <meta name="author" content="龚亮">
   <meta name="keywords" content="">
   
-    <meta name="description" content="数字逻辑电路数字部分：运算符与函数(AND) 位组合编号规则，最右一位为0，最左一位为31  A &#x3D; 0001 0010 0011 0100 0101 0110 0111 1000 记作：A[31:0]  位屏蔽&#x2F;掩码  如保留最后两位，则将最后两位设为1，其他均设为0  或函数(OR) 非函数(NOT) 异或函数(XOR) 按位取反相当于将原数和1111…按位异或 基本运算符">
+    <meta name="description" content="数字逻辑电路数字部分：运算符与逻辑表达式与函数(AND) 位组合编号规则，最右一位为0，最左一位为31  A &#x3D; 0001 0010 0011 0100 0101 0110 0111 1000 记作：A[31:0]  位屏蔽&#x2F;掩码  如保留最后两位，则将最后两位设为1，其他均设为0  或函数(OR) 非函数(NOT) 异或函数(XOR) 按位取反相当于将原数和1111…按位异或">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数字逻辑电路">
 <meta property="og:url" content="http://example.com/2024/03/14/%E6%95%B0%E5%AD%97%E9%80%BB%E8%BE%91%E7%94%B5%E8%B7%AF/index.html">
 <meta property="og:site_name" content="TwinklerG 的个人博客">
-<meta property="og:description" content="数字逻辑电路数字部分：运算符与函数(AND) 位组合编号规则，最右一位为0，最左一位为31  A &#x3D; 0001 0010 0011 0100 0101 0110 0111 1000 记作：A[31:0]  位屏蔽&#x2F;掩码  如保留最后两位，则将最后两位设为1，其他均设为0  或函数(OR) 非函数(NOT) 异或函数(XOR) 按位取反相当于将原数和1111…按位异或 基本运算符">
+<meta property="og:description" content="数字逻辑电路数字部分：运算符与逻辑表达式与函数(AND) 位组合编号规则，最右一位为0，最左一位为31  A &#x3D; 0001 0010 0011 0100 0101 0110 0111 1000 记作：A[31:0]  位屏蔽&#x2F;掩码  如保留最后两位，则将最后两位设为1，其他均设为0  或函数(OR) 非函数(NOT) 异或函数(XOR) 按位取反相当于将原数和1111…按位异或">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-03-14T12:00:00.000Z">
-<meta property="article:modified_time" content="2024-03-14T11:26:46.809Z">
+<meta property="article:published_time" content="2024-03-14T12:43:00.000Z">
+<meta property="article:modified_time" content="2024-03-14T12:43:13.187Z">
 <meta property="article:author" content="龚亮">
 <meta property="article:tag" content="计算系统基础">
 <meta name="twitter:card" content="summary_large_image">
@@ -200,7 +200,7 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-03-14 20:00" pubdate>
+        <time datetime="2024-03-14 20:43" pubdate>
           2024年3月14日 晚上
         </time>
       </span>
@@ -212,7 +212,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          231 字
+          1.3k 字
         
       </span>
     
@@ -223,7 +223,7 @@
         
         
         
-          2 分钟
+          12 分钟
         
       </span>
     
@@ -265,7 +265,7 @@
             
               <div class="markdown-body">
                 
-                <h1 id="数字逻辑电路"><a href="#数字逻辑电路" class="headerlink" title="数字逻辑电路"></a>数字逻辑电路</h1><h2 id="数字部分：运算符"><a href="#数字部分：运算符" class="headerlink" title="数字部分：运算符"></a>数字部分：运算符</h2><p>与函数(AND)</p>
+                <h1 id="数字逻辑电路"><a href="#数字逻辑电路" class="headerlink" title="数字逻辑电路"></a>数字逻辑电路</h1><h2 id="数字部分：运算符与逻辑表达式"><a href="#数字部分：运算符与逻辑表达式" class="headerlink" title="数字部分：运算符与逻辑表达式"></a>数字部分：运算符与逻辑表达式</h2><p>与函数(AND)</p>
 <p>位组合编号规则，最右一位为0，最左一位为31</p>
 <blockquote>
 <p>A &#x3D; 0001 0010 0011 0100 0101 0110 0111 1000</p>
@@ -288,7 +288,82 @@
 </blockquote>
 <p>C的按位运算符：<code>&amp;</code>,<code>|</code>,<code>~</code>,<code>^</code>；移位运算符：左移&lt;&lt;零填充，右移&gt;&gt;符号拓展</p>
 <p>&#x3D;&#x3D;优先级&#x3D;&#x3D;：<code>~</code> &gt; <code>&gt;&gt;</code> &#x3D; <code>&lt;&lt;</code> &gt; <code>&amp;</code> &gt; <code>^</code> &gt; <code>|</code></p>
-<h2 id="电路部分：晶体管和门电路"><a href="#电路部分：晶体管和门电路" class="headerlink" title="电路部分：晶体管和门电路"></a>电路部分：晶体管和门电路</h2><p>MOS晶体管：P型和N型</p>
+<h2 id="电路部分：晶体管和门电路"><a href="#电路部分：晶体管和门电路" class="headerlink" title="电路部分：晶体管和门电路"></a>电路部分：晶体管和门电路</h2><p>MOS晶体管：P型（0V导通）和N型（3.3V导通）</p>
+<p>C(comlpementary 互补)MOS电路：<strong>N型源极不接电源正极</strong>，<strong>P型源极不接地</strong>。既含P又含N。</p>
+<h3 id="门"><a href="#门" class="headerlink" title="门"></a>门</h3><h4 id="非门"><a href="#非门" class="headerlink" title="非门"></a>非门</h4><p>栅极P,N一起作<strong>输入端</strong>，漏极P,N一起作<strong>输出端</strong></p>
+<p>PMOS管的源极接电源正极，NMOS管的源极接地</p>
+<h4 id="或非门"><a href="#或非门" class="headerlink" title="或非门"></a>或非门</h4><p>顶部P,P串联，底部N,N并联</p>
+<h4 id="或门"><a href="#或门" class="headerlink" title="或门"></a>或门</h4><p>在或非门输出端增加一个反相器</p>
+<h4 id="非与门"><a href="#非与门" class="headerlink" title="非与门"></a>非与门</h4><p>顶部并联P,P，底部N,N串联</p>
+<h4 id="与门"><a href="#与门" class="headerlink" title="与门"></a>与门</h4><p>在非与门输出端增加一个反相器</p>
+<blockquote>
+<p>可以验证德摩根律</p>
+</blockquote>
+<p>三个输入的与门可以将其中两个输出的结果作为输入和另一个输入进入与门</p>
+<h3 id="组合逻辑电路"><a href="#组合逻辑电路" class="headerlink" title="组合逻辑电路"></a>组合逻辑电路</h3><p>逻辑结构两大类型：能够存储信息，不能存储信息</p>
+<p>组合逻辑电路不能存储信息，为“判定元件”，主要用于处理信息</p>
+<h4 id="译码器"><a href="#译码器" class="headerlink" title="译码器"></a>译码器</h4><p>只有一个输出为1，其他全为0</p>
+<p>通常，译码器有n个输入，$2^n$个输出</p>
+<p>被检测的输入组合的输出为1，所有其他的输出则为0</p>
+<h4 id="多路选择器"><a href="#多路选择器" class="headerlink" title="多路选择器"></a>多路选择器</h4><p>选择一个输入连接到输出</p>
+<p>由选择信号决定由哪个输入连接到输出</p>
+<p>一般由n条选择线和$2^n$个输入组成</p>
+<h4 id="全加法器"><a href="#全加法器" class="headerlink" title="全加法器"></a>全加法器</h4><p>4位二进制加法电路</p>
+<h3 id="逻辑完备性"><a href="#逻辑完备性" class="headerlink" title="逻辑完备性"></a>逻辑完备性</h3><p>任何逻辑函数都可通过一个可编程逻辑阵列(PLA)来实现，而PLA只有与门、或门和非门组成。</p>
+<h4 id="经典逻辑电路——布尔代数和逻辑电路"><a href="#经典逻辑电路——布尔代数和逻辑电路" class="headerlink" title="经典逻辑电路——布尔代数和逻辑电路"></a>经典逻辑电路——布尔代数和逻辑电路</h4><p>输出1位的&#x3D;&#x3D;多路选择器&#x3D;&#x3D;</p>
+<blockquote>
+<p> 多路选择器：在多路的输入中选择1路作为输出</p>
+</blockquote>
+<p>布尔代数有交换律、分配律、结合律等定律</p>
+<p>逻辑函数可以被表示为：真值表、逻辑表达式、逻辑电路</p>
+<h3 id="时序逻辑电路"><a href="#时序逻辑电路" class="headerlink" title="时序逻辑电路"></a>时序逻辑电路</h3><h4 id="R-S锁存器"><a href="#R-S锁存器" class="headerlink" title="R-S锁存器"></a>R-S锁存器</h4><p>工作原理：”保持&#x2F;静止状态“，S&#x3D;R&#x3D;1</p>
+<ul>
+<li>R：”reset”，复位</li>
+<li>S：”set“，置位</li>
+</ul>
+<p>非与门也可以用非或门替代</p>
+<h5 id="置位"><a href="#置位" class="headerlink" title="置位"></a>置位</h5><p>S&#x3D;0, R&#x3D;1, a的值被设置为1,b为0——写入1</p>
+<p>S&#x3D;1, R&#x3D;1, a的值不变——存储1</p>
+<h5 id="复位"><a href="#复位" class="headerlink" title="复位"></a>复位</h5><p>S&#x3D;1, R&#x3D;0, a的值被设置为0,b为1——写入0</p>
+<p>S&#x3D;1, R&#x3D;1, a的值不变——存储0</p>
+<p><del>R &#x3D; S &#x3D; 0</del>，取决于晶体管的电子特性(禁止此操作)</p>
+<h4 id="门控D锁存器"><a href="#门控D锁存器" class="headerlink" title="门控D锁存器"></a>门控D锁存器</h4><p>两个输入：D(data)和WE(write enable)</p>
+<p>WE &#x3D; 1,输入被设置为D的值</p>
+<p>WE &#x3D; 0,存储D的值（保持）</p>
+<h4 id="寄存器"><a href="#寄存器" class="headerlink" title="寄存器"></a>寄存器</h4><p><strong>WE共享</strong>，多个门控D锁存器存储多位</p>
+<p>WE &#x3D; 1, n位D的值被写入寄存器</p>
+<h4 id="时序逻辑电路——有限状态机"><a href="#时序逻辑电路——有限状态机" class="headerlink" title="时序逻辑电路——有限状态机"></a>时序逻辑电路——有限状态机</h4><p>组合逻辑+寄存器：既能处理信息，也能存储信息。基于之前发生的事做判定，输出既取决于当前的输入，也取决于存储在存储元件中的值。可用来实现一种非常重要的被称为<strong>有限状态机</strong>的机制。</p>
+<blockquote>
+<p>一个示例：电话应答机。响铃3次才开始录音机录音，共有4个状态</p>
+</blockquote>
+<p>寄存器容量有限，所以状态的数目有限。</p>
+<p>5个组成元素：</p>
+<ol>
+<li>有限状态的数目</li>
+<li>有限数目的外部输入</li>
+<li>有限数目的输出</li>
+<li>明确定义的<strong>状态转换函数</strong></li>
+<li>明确定义的&#x3D;&#x3D;输出函数&#x3D;&#x3D;</li>
+</ol>
+<p>可以采用状态图来表示：一组圆和一组连接弧线（当前状态-&gt;下一个状态（次态））</p>
+<p>下一个状态是由当前状态和当前的外部输入的组合决定的</p>
+<p>系统的输出值由系统的当前状态决定，或者由当前状态和当前的外部输入的组合决定。</p>
+<p>时序逻辑电路：&#x3D;&#x3D;交通灯控制器&#x3D;&#x3D;</p>
+<h3 id="存储器"><a href="#存储器" class="headerlink" title="存储器"></a>存储器</h3><p>基本存储元件：</p>
+<p>存储一位信息：锁存器，触发器</p>
+<p>存储多位信息寄存器（堆）</p>
+<p>存储器（内存）</p>
+<p>地址：每一个单元联系在一起的唯一标识符，二进制地址</p>
+<p>寻址能力：存储在每一个单元中的信息的位数</p>
+<p>地址空间：唯一可识别的单元总数</p>
+<blockquote>
+<p>2^10^ , 1024, 1k</p>
+<p>2^20^, 1M</p>
+<p>2^30^ , 1G</p>
+<p>2^32^ , 4G</p>
+</blockquote>
+<p>每个存储单元包含一个字节的信息</p>
+<p>存储器4x2</p>
 
                 
               </div>
