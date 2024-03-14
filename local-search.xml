@@ -4,13 +4,19 @@
   
   
   <entry>
-    <title>page</title>
-    <link href="/2024/03/14/page/"/>
-    <url>/2024/03/14/page/</url>
+    <title>数字逻辑电路</title>
+    <link href="/2024/03/14/%E6%95%B0%E5%AD%97%E9%80%BB%E8%BE%91%E7%94%B5%E8%B7%AF/"/>
+    <url>/2024/03/14/%E6%95%B0%E5%AD%97%E9%80%BB%E8%BE%91%E7%94%B5%E8%B7%AF/</url>
     
-    <content type="html"><![CDATA[]]></content>
+    <content type="html"><![CDATA[<h1 id="数字逻辑电路"><a href="#数字逻辑电路" class="headerlink" title="数字逻辑电路"></a>数字逻辑电路</h1><h2 id="数字部分：运算符"><a href="#数字部分：运算符" class="headerlink" title="数字部分：运算符"></a>数字部分：运算符</h2><p>与函数(AND)</p><p>位组合编号规则，最右一位为0，最左一位为31</p><blockquote><p>A &#x3D; 0001 0010 0011 0100 0101 0110 0111 1000</p><p>记作：A[31:0]</p></blockquote><p>位屏蔽&#x2F;掩码</p><blockquote><p>如保留最后两位，则将最后两位设为1，其他均设为0</p></blockquote><p>或函数(OR)</p><p>非函数(NOT)</p><p>异或函数(XOR)</p><p>按位取反相当于将原数和1111…按位异或</p><h3 id="基本运算符"><a href="#基本运算符" class="headerlink" title="基本运算符"></a>基本运算符</h3><p>$A·B$ 为AND</p><p>$A+B$ 为OR</p><p>$\overline{A}$ 为NOT</p><p>&#x3D;&#x3D;逻辑完备性&#x3D;&#x3D;：其他任何逻辑函数可以写成这三种基本逻辑运算符的逻辑组合</p><blockquote><p>异或函数可以写成：$(\overline{A}·B)+(A·\overline{B})$</p></blockquote><p>C的按位运算符：<code>&amp;</code>,<code>|</code>,<code>~</code>,<code>^</code>；移位运算符：左移&lt;&lt;零填充，右移&gt;&gt;符号拓展</p><p>&#x3D;&#x3D;优先级&#x3D;&#x3D;：<code>~</code> &gt; <code>&gt;&gt;</code> &#x3D; <code>&lt;&lt;</code> &gt; <code>&amp;</code> &gt; <code>^</code> &gt; <code>|</code></p><h2 id="电路部分：晶体管和门电路"><a href="#电路部分：晶体管和门电路" class="headerlink" title="电路部分：晶体管和门电路"></a>电路部分：晶体管和门电路</h2><p>MOS晶体管：P型和N型</p>]]></content>
     
     
+    
+    <tags>
+      
+      <tag>计算系统基础</tag>
+      
+    </tags>
     
   </entry>
   
