@@ -626,3 +626,6 @@ struct node* add_to_record(struct node* list, int n, int steps){
 # Tips for linkers for devcpp
 
 ![Linker](./img/Linker.png)
+
+# [回到首页](./index.html)
+
