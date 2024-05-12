@@ -1,0 +1,15 @@
+# 文心千帆API的获取
+
+1. 使用百度账号登录[百度智能云](login.bce.baidu.com)
+
+   ~~不会有人没有百度账号吧~~
+
+2. 点击进入大模型平台
+
+   ![17b253635d6fd61f324b6d6a9bff21a8](./img/17b253635d6fd61f324b6d6a9bff21a8.png)
+
+3. 点击应用接入，选择创建应用
+
+   ![img](./img/%7BF7336936-EEAD-48b5-9FE3-CEFAC58D168A%7D.png)
+   
+4. 简单配置后即可获得API Key和Secret Key。点开详情可以进行复制。注意，不要向别人泄露自己的SecretKey！
