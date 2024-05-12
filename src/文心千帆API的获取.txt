@@ -1,6 +1,6 @@
 # 文心千帆API的获取
 
-1. 使用百度账号登录[百度智能云](login.bce.baidu.com)
+1. 使用百度账号登录[百度智能云](https://login.bce.baidu.com)
 
    ~~不会有人没有百度账号吧~~
 
